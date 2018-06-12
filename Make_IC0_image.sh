@@ -14,7 +14,7 @@ yymmdds=20160701
 yymmdde=100000000
 poleALL="NP"
 adALL="D"
-shotALL="L M C"
+shotALL="L C"
 gmtscript="${idir1}/gmt4_make_amsr2.sh"
 
 cd ${gmtscript%/*}

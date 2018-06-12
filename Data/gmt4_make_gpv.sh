@@ -68,21 +68,21 @@ case $shot in
     Offset=0.1c
     TLength=0.1c
     Oblique=6
-    Region=170/240/65/85
-    proJ=d205/100/70/80/1:41750000
+    Region=175/200/55/73
+    proJ=m1:73000000
     Symbol=c0.05
     LabelFont=f5t
-    LabelGrid=-Gd9.5c
-    Interval=2
-    Base1=Sa10f1
-    Base2=WEg5/5g1a5f1
+    LabelGrid=-GD2d
+    Interval=0.5
+    Base1=WeSng10a10f1
+    Base2=
     DegreeFormat=ddd:mm:ss
-    Ytext=6.0
-    NorthSpace=0x99
+    Ytext=6.6
+    NorthSpace=0x45
     SouthSpace1=0x100
-    SouthSpace2=0x20
-    WestSpace=0x0
-    EastSpace=0x0
+    SouthSpace2=0x0
+    WestSpace=160x0
+    EastSpace=300x0
     Angle=Close\ Shot ;;
 esac
 
@@ -153,6 +153,7 @@ case $var in
     echo ;;
   PRMSL)
     GMT grdreformat "${NCORG}?PRMSL_meansealevel" $NCVAR
+    GMT grdcontour $NCVAR -R$Region -J$proJ -W1/black/ta -C$Interval -K -O >> $EPS
     GMT grdcontour $NCVAR -R$Region -J$proJ -W+3 -A$LabelFont $LabelGrid -C$Color -K -O >> $EPS
     echo ;;
   WIND)

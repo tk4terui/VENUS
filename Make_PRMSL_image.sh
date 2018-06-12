@@ -14,7 +14,7 @@ yymmdds=20160701
 yymmdde=100000000
 poleALL="NP"
 adALL="00 12"
-shotALL="L M C"
+shotALL="L C"
 forecasts="00 01 02 03"
 gmtscript="${idir1}/gmt4_make_gpv.sh"
 

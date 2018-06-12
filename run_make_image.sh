@@ -7,7 +7,6 @@ else
   echo "$DATE run_make_image.sh is started."
   ./Make_IC0_image.sh
   ./Make_SST_image.sh
-  ./Make_SIT_image.sh
   ./Make_PRMSL_image.sh
   ./Make_WIND_image.sh
   ./Make_HTSGW_image.sh
