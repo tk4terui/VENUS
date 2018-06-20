@@ -72,7 +72,7 @@ case $shot in
     SouthSpace1=0x100
     SouthSpace2=0x0
     WestSpace=160x0
-    EastSpace=50x0
+    EastSpace=294x0
     Angle=Close\ Shot ;;
 esac
 
@@ -127,7 +127,7 @@ GMT pscoast -R$Region -J$proJ -G218/218/182 -K -O >> $EPS
 GMT psbasemap -R$Region -J$proJ -B$Base1 -K -O >> $EPS
 GMT psbasemap -R$Region -J$proJ -B$Base2 -K -O >> $EPS
 GMT pstext -R0/10/0/20 -Jx1 -O <<EOF >> $EPS
-0 $Ytext 8 0 0 BL AMSR2 $Angle for ${yymmddad:0:8} $Orbit $Vtext
+0 $Ytext 8 0 0 BL AMSR2 $Angle for ${yymmddad:0:8}
 EOF
 pushd $tmpdir
 

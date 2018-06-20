@@ -102,17 +102,17 @@ case $var in
     NCVAR=$tmpdir/WINDspeed.nc
     NCVAR1=$tmpdir/UGRD.nc
     NCVAR2=$tmpdir/VGRD.nc
-    Vtext="+$Hour hours              $var"
+    Vtext="+$Hour hours"
     Alpha=Set ;;
   TMP)
     NCORG=GPV/${var}/${yymmddhh:0:6}/GPV${yymmddhh}0000FD${fday}00_${var}.nc
     NCVAR=$tmpdir/$var.nc
-    Vtext="+$Hour hours                         $var"
+    Vtext="+$Hour hours"
     Alpha=Set ;;
   HTSGW)
     NCORG=GPV/${var}/${yymmddhh:0:6}/GPV${yymmddhh}0000FD${fday}00_${var}.nc
     NCVAR=$tmpdir/$var.nc
-    Vtext="+$Hour hours                                  $var"
+    Vtext="+$Hour hours"
     Alpha=Set ;;
   WAVE)
     NCORG=GPV/DIRPW/${yymmddhh:0:6}/GPV${yymmddhh}0000FD${fday}00_DIRPW.nc
@@ -126,7 +126,7 @@ case $var in
     TXTVAR1=$tmpdir/DIRPW.txt
     TXTVAR2=$tmpdir/PERPW.txt
     TXTVAR=$tmpdir/WAVE.txt
-    Vtext="+$Hour hours                                                 $var"
+    Vtext="+$Hour hours"
     Alpha=Set ;;
 esac
 
@@ -184,7 +184,7 @@ esac
 GMT psbasemap -R$Region -J$proJ -B$Base1 -K -O >> $EPS
 GMT psbasemap -R$Region -J$proJ -B$Base2 -K -O >> $EPS
 GMT pstext -R0/10/0/20 -Jx1 -O <<EOF >> $EPS
-0 $Ytext 8 0 0 BL GPV $Vtext
+0 $Ytext 8 0 0 BL GPV 
 EOF
 pushd $tmpdir
 GMT ps2raster $EPS -A -TG
