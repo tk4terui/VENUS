@@ -3,7 +3,7 @@ now=`date`
 currentdir=`pwd`
 idir1="$currentdir/Data/"
 
-odir="$currentdir/Data/WEB/track"
+odir="$currentdir/Data/WEB/data/track"
 
 shotALL="Long Close"
 gmtscript="${idir1}/gmt4_make_track.sh"
