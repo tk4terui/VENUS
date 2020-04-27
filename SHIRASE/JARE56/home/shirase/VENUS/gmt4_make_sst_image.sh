@@ -1,3 +1,4 @@
+#!/bin/bash
 tmpdir=/tmp
 for i in $@
 do

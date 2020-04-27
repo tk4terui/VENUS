@@ -1,3 +1,4 @@
+#!/bin/bash
 idir0="/home/shirase/VENUS"
 ifile="${idir0}/%V/%Y%m/GW1AM2%Y%m%dA_100%V%P.dat"
 vars=("SST" )

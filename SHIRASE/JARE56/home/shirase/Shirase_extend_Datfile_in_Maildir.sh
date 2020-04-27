@@ -1,3 +1,4 @@
+#!/bin/bash
 MAILDIR=$HOME/Maildir
 ARCHDIR=arch
 WORKDIR=$HOME/VENUS
