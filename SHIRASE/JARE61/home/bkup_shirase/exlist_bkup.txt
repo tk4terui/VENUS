@@ -1,0 +1,15 @@
+log
+Maildir
+Data/AMSR2
+Data/CPT
+Data/DEPTH
+Data/GPV
+Data/LOGO
+Data/MAP
+Data/TRACK
+Data/WEB
+Data/amsr2gmt
+Data/track2gmt
+.fetchmailrc
+.procmailrc
+

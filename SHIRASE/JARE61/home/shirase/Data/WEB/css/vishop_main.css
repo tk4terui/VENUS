@@ -1,0 +1,331 @@
+/* _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+ Sea-Ice monitor
+   海氷モニタページスタイルシート
+
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/ */
+/* import common style */
+@import url("vishop_common.css");
+
+/* Monitor Main *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+div.main-left {
+  box-sizing      : content-box;
+  width           : 700px;
+  height          : 100%;
+  border          : 1px solid silver;
+  background-color: white;
+  box-shadow      : 3px 3px 5px rgba(0,0,0,0.8);
+  border-radius   : 5px;
+  position        : relative;
+  padding         : 5px;
+  left            : 0px;
+  top             : 0px;
+  text-align      : center;
+}
+
+
+div.main-right {
+  width           : 268px;
+  height          : 100%;
+  border          : 1px solid silver;
+  background-color: white;
+  box-shadow      : 3px 3px 5px rgba(0,0,0,0.8);
+  border-radius   : 5px;
+  position        : absolute;
+  padding         : 5px;
+  left            : 720px;
+  top             : 0px;
+}
+
+/* Main Image Style ------------------------------------------------ */
+div#mainimg{
+  text-align: center;
+  position  : relative;
+  top       : 0px;
+  left      : 0px;
+  width     : 700px;
+  height    : 700px;
+}
+
+div#mainimg img {
+  width : 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div#mainimg div#base {
+  position: relative;
+  top     : 0px;
+  left    : 0px;
+}
+
+div#overlay {
+  position: absolute;
+  top     : 0px;
+  left    : 0px;
+}
+
+svg#pointOverlayImg {
+  width : 700px;
+  height: 700px;
+  position: absolute;
+  top     : 0px;
+  left    : 0px;
+}
+
+/* -- Serch Menu Style ------------------------------------------- */
+div.itemlabel {
+  background-image   : url(../images/icon_circle.png);
+  background-repeat  : no-repeat;
+  background-position: 5px 3px;
+  background-color   : #3398cd;
+  border-radius      : 6px 6px 0px 0px;
+  box-shadow         : 1px 1px 4px rgba(0,0,0,0.6);
+  padding            : 0px 0px 0px 23px;
+  margin             : 15px 0px 0px 0px;
+  font-size          : 11pt;
+  font-weight        : bold;
+  color              : white;
+  text-shadow        : 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+div#seachdate {
+  text-align: center;
+  position  : relative;
+}
+  div#searchdate input {
+    height          : 25px;
+    border          : 0px solid navy;
+    background-color: dimgray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+    font-weight     : bold;
+    font-size       : 10pt;
+    position        : relative;
+    top             : 0px;
+    left            : 25px;
+    padding         : 0px;
+  }
+    div#searchdate input:active {
+      top       : 2px;
+      left      : 26px;
+      box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    }
+    div#searchdate input:hover {
+      background-color: crimson;
+    }
+    input#prev {
+      width           : 60px;
+      border-radius   : 20px 0px 0px 20px;
+    }
+    input#next {
+      width           : 60px;
+      border-radius   : 0px 20px 20px 0px;
+    }
+    input#latest {
+      width        : 100px;
+      border-radius: 1px;
+    }
+
+div#selectdate {
+  padding-top:5px;
+  text-align : center;
+}
+  div#selectdate select {
+    width           : 60px;
+    background-color: whitesmoke;
+    color           : black;
+    margin-top:5px;
+  }
+  div#selectdate input {
+    height          : 25px;
+    width           : 80px;
+    border          : 0px solid navy;
+    border-radius   : 6px;
+    background-color: gray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+    font-weight     : bold;
+    font-size       : 10pt;
+    position        : relative;
+    top             : 0px;
+    left            : 0px;
+    padding         : 0px;
+  }
+    div#selectdate input:hover {
+      background-color: crimson;
+    }
+    div#selectdate input:active {
+      top       : 2px;
+      left      : 2px;
+      box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    }
+
+
+div#selectarea {
+  padding-top:5px;
+}
+  div#selectarea input {
+    height          : 25px;
+    width           : 100px;
+    border          : 0px solid navy;
+    background-color: gray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+    font-weight     : bold;
+    font-size       : 10pt;
+    position        : relative;
+    top             : 0px;
+    left            : 40px;
+    padding         : 0px;
+  }
+    div#selectarea input:hover {
+      background-color: crimson;
+    }
+
+    div#selectarea input#areanp {
+      border-radius   : 6px 0px 0px 6px;
+    }
+    div#selectarea input#areasp {
+      border-radius   : 0px 6px 6px 0px;
+    }
+
+/**
+div#selectproduct {
+  padding    : 5px 0px 0px 10px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+  div#selectproduct input{
+    position: relative;
+    top:2px;
+  }
+div#selectsize {
+  padding    : 5px 0px 0px 10px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+  div#selectsize input{
+    position: relative;
+    top:2px;
+  }
+div#selectorbit {
+  padding    : 5px 0px 0px 10px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+  div#selectorbit input{
+    position: relative;
+    top:2px;
+  }
+
+*/
+select#selectproduct,
+select#selectsize,
+select#selectorbit {
+  margin     : 10px 10px 0px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  border: 1px #c0c0c0 solid;
+  width: 90%;
+}
+
+
+div#selectoverlay {
+  padding    : 5px 10px 0px 5px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  margin-left: 10px;
+}
+div#selectoverlay div.selector{
+	position: relative;
+	margin-bottom: 15px;
+}
+  div#selectoverlay input{
+	height          : 22px;
+	width           : 100px;
+	border          : 0px solid navy;
+	border-radius   : 3px;
+    background-color: gray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+    font-weight     : bold;
+    font-size       : 10pt;
+    position        : absolute;
+    top             : 0px;
+/**
+    margin-top      : 10px;
+    position        : relative;
+    left            : 10px;
+ */
+    right           : 10px;
+    padding         : 0px;
+  }
+    div#selectoverlay input:hover {
+      background-color: crimson;
+    }
+    div#selectoverlay input:active {
+      top       : 2px;
+      right     : 8px;
+      box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    }
+  div#selectoverlay label {
+      vertical-align : middle;
+  }
+
+  .gpvselector div.btn-group {
+	  margin-left: 2px;
+  }
+  .gpvselector label.gpv-button {
+	  /*
+    border          : 0px solid navy;
+    border-radius   : 3px;
+    background-color: gray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+	*/
+    font-weight     : bold;
+    font-size       : 10pt;
+	padding : 4px 8px;
+	margin-bottom : 10px;
+  }
+
+
+div#overlaypoint {
+  clear      : both;
+  margin-top : 10px;
+  font-size  : 10.5pt;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  text-align : center;
+}
+  div#overlaypoint #overlaypointButton input{
+    height          : 25px;
+    width           : 100px;
+    border          : 0px solid navy;
+    border-radius   : 3px;
+    background-color: gray;
+    box-shadow      : 1px 2px 5px rgba(0,0,0,0.9);
+    text-shadow     : 2px 2px 2px rgba(0,0,0,0.4);
+    color           : white;
+    font-weight     : bold;
+    font-size       : 10pt;
+    position        : relative;
+    top             : 0px;
+    padding         : 0px;
+    margin          : 10px auto 0px auto;
+    clear           : both;
+  }
+    div#overlaypoint #overlaypointButton input:hover {
+      background-color: crimson;
+    }
+    div#overlaypoint #overlaypointButton input:active {
+      top       : 2px;
+      box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    }
+
